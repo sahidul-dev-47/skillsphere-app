@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import image from '@/assests/logo.png'
+import image from '@/assets/logo.png'
 
 const Navbar = () => {
 
@@ -18,10 +18,10 @@ const Navbar = () => {
             height={30}
             className="object-cover h-auto w-auto"
           />
-          <h3 className="font-black text-lg">SkillSphere</h3>
+          <h3 className="font-black text-lg text-purple-500">SkillSphere</h3>
         </div>
 
-        <ul className="flex items-center gap-5 text-sm">
+        <ul className="flex items-center gap-5 text-sm text-purple-700">
           <li>
             <Link href={"/"}>Home</Link>
           </li>
