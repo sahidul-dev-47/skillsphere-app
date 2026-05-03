@@ -54,19 +54,9 @@
     "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600",
     "category": "Cloud Computing"
   },
+  
   {
     "id": 6,
-    "title": "Digital Marketing & SEO Fundamentals",
-    "instructor": "Jessica Brown",
-    "duration": "12 hours",
-    "rating": 4.5,
-    "level": "Beginner",
-    "description": "Learn SEO, social media marketing, Google Ads, and content strategy from the ground up.",
-    "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=600",
-    "category": "Marketing"
-  },
-  {
-    "id": 7,
     "title": "Advanced Node.js & Express API Development",
     "instructor": "Chris Wilson",
     "duration": "22 hours",
@@ -77,7 +67,7 @@
     "category": "Development"
   },
   {
-    "id": 8,
+    "id": 7,
     "title": "Cybersecurity Essentials",
     "instructor": "Robert Garcia",
     "duration": "25 hours",
@@ -88,7 +78,7 @@
     "category": "Security"
   },
   {
-    "id": 9,
+    "id": 8,
     "title": "iOS App Development with Swift",
     "instructor": "Amanda Torres",
     "duration": "30 hours",
@@ -99,7 +89,7 @@
     "category": "Mobile Development"
   },
   {
-    "id": 10,
+    "id": 9,
     "title": "Blockchain & Web3 Development",
     "instructor": "Nathan Kim",
     "duration": "26 hours",
