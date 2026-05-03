@@ -52,10 +52,10 @@ const PopularCourseCard = ({ course }) => {
                 <span className="text-sm font-black text-gray-900">{course.description}</span>
 
                <div className="flex w-full gap-4 ">
-                 <button className="bg-gray-900 flex-1 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-violet-600 transition-all active:scale-95 shadow-md mt-3">
+                 <button className="bg-gray-700 flex-1 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-violet-600 transition-all active:scale-95 shadow-md mt-3">
                 Buy Now
               </button>
-                 <button className="bg-gray-900 flex-1 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-violet-600 transition-all active:scale-95 shadow-md mt-3">
+                 <button className="bg-gray-700 flex-1 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-violet-600 transition-all active:scale-95 shadow-md mt-3">
                 Details
               </button>
                </div>
