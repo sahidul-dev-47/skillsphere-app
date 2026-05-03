@@ -62,41 +62,41 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-2 rounded bg-white  hover:bg-purple-500 border-white/20  outline-none"
+                className="w-full p-2 rounded bg-white border-white/20  outline-none"
               />
 
               {/* Email */}
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-2 rounded  hover:bg-purple-500 bg-white border-white/20 outline-none"
+                className="w-full p-2 rounded  bg-white border-white/20 outline-none"
               />
 
               {/* Phone Number */}
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="w-full p-2 rounded  hover:bg-purple-500 bg-white border-white/20 outline-none"
+                className="w-full p-2 rounded  bg-white border-white/20 outline-none"
               />
 
               {/* Subject */}
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full p-2 rounded  hover:bg-purple-500 bg-white border-white/20 outline-none"
+                className="w-full p-2 rounded  bg-white border-white/20 outline-none"
               />
 
               {/* Message */}
               <textarea
                 rows="5"
                 placeholder="Your Message"
-                className="w-full p-2 rounded  hover:bg-purple-500 bg-white border-white/20 outline-none"
+                className="w-full p-2 rounded  bg-white border-white/20 outline-none"
               ></textarea>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-purple-600 hover:bg-blue-700 transition p-2 rounded font-medium"
+                className="w-full bg-purple-600 hover:bg-gray-600 transition p-2 rounded font-medium"
               >
                 Send Message
               </button>
