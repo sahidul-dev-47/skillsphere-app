@@ -2,69 +2,75 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const PopularCourseCard = ({ course }) => {
-  console.log(course);
+const PopularCourseCard = ({ course , showBadge }) => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -8, scale: 1.02 }}
+      transition={{ duration: 0.5 }}
+      // w-full max-w-[420px] card-ke mota korbe kintu responsive rakhbe
+      className="relative group w-full max-w-100 sm:max-w-125  bg-white border border-gray-100 rounded-[32px] p-6 shadow-sm hover:shadow-2xl transition-all duration-300"
+    >
+      {showBadge &&(
+         <div className="absolute top-5 right-5 z-10 bg-linear-to-r from-violet-600 to-indigo-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
+        High Rated
+      </div>
+      )};
+     
 
-    <div className="flex flex-wrap gap-8 p-12 bg-[#F8F9FA] justify-center rounded-lg">
-        <motion.div
-          key={course.id}
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: course * 0.15 }}
-          whileHover={{ y: -12 }}
-          className="relative group w-80 bg-white border border-gray-100 rounded-3xl p-5 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden"
-        >
-          <div className="absolute top-4 right-4 z-10 bg-linear-to-r from-violet-600 to-indigo-600 text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-tighter shadow-lg">
-            High Rated
+      {/* Image height komano hoyeche height komanor jonno */}
+      <div className="relative h-50 w-full bg-gray-50 rounded-2xl overflow-hidden mb-4">
+        <Image
+          src={course.image}
+          alt={course.title}
+          fill
+          className="object-cover group-hover:scale-110 transition-transform duration-700"
+        />
+      </div>
+
+      <div className="space-y-4">
+        <div>
+          <h3 className="text-gray-800 font-bold text-xl leading-tight line-clamp-1">
+            {course.title}
+          </h3>
+          <p className="text-gray-400 text-xs mt-1 font-medium">
+            Instructor: <span className="text-gray-600">{course.instructor}</span>
+          </p>
+        </div>
+
+        {/* Info Grid: Egulo pasapasi thakbe jate height na bare */}
+        <div className="flex justify-between py-3 border-y border-gray-50">
+          <div className="flex flex-col">
+            <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Duration</span>
+            <span className="text-gray-800 text-xs font-extrabold">{course.duration}</span>
           </div>
-
-          <div className="relative h-48 w-full bg-gray-100 rounded-2xl overflow-hidden mb-5">
-            <Image
-              src={course.image} 
-              alt={course.title}
-              width={300}
-              height={300}
-              className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1000 bg-linear-to-r from-transparent via-white/40 to-transparent" />
+          <div className="flex flex-col">
+            <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Level</span>
+            <span className="text-gray-800 text-xs font-extrabold">{course.level}</span>
           </div>
-
-          <div className="space-y-3">
-            <h3 className="text-gray-800 font-extrabold text-xl leading-snug group-hover:text-violet-600 transition-colors">
-             {course.title}
-            </h3>
-            
-            <div className="flex items-center gap-2">
-              <div className="flex text-amber-400 text-sm">{course.rating}</div>
-             
-            </div>
-
-            <p className="text-gray-500 text-sm font-medium border-b border-gray-50 pb-4">
-              Instructor: <span className="text-gray-700">{course.instructor}</span>
-            </p>
-
-            <div className="flex justify-between items-center pt-4">
-              <div className="flex flex-col">
-                <span className="text-gray-800 text-md font-bold"> Duration :  /{course.duration}</span>
-                <span className="text-gray-800 text-md font-bold "> Level :  {course.level}</span>
-                <span className="text-2xl font-black text-gray-900">{course.category}</span>
-                <span className="text-sm font-black text-gray-900">{course.description}</span>
-
-               <div className="flex w-full gap-4 ">
-                 <button className="bg-gray-700 flex-1 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-violet-600 transition-all active:scale-95 shadow-md mt-3">
-                Buy Now
-              </button>
-                 <button className="bg-gray-700 flex-1 text-white px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-violet-600 transition-all active:scale-95 shadow-md mt-3">
-                Details
-              </button>
-               </div>
-              </div>
-              
-            </div>
+          <div className="flex flex-col text-right">
+            <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Category</span>
+            <span className="text-violet-600 text-xs font-black uppercase">{course.category}</span>
           </div>
-        </motion.div>
-    </div>
-  )}
+        </div>
+
+        <p className="text-sm text-gray-500 line-clamp-1 italic">
+          {course.description}
+        </p>
+
+        {/* Mota Buttons */}
+        <div className="flex gap-3">
+          <button className="flex-[1.5] bg-gray-900 text-white py-3.5 rounded-2xl text-sm font-bold hover:bg-violet-600 transition-all shadow-lg active:scale-95">
+            Buy Now
+          </button>
+          <button className="flex-1 bg-gray-50 text-gray-700 py-3.5 rounded-2xl text-sm font-bold hover:bg-gray-100 transition-all border border-gray-100">
+            Details
+          </button>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
 export default PopularCourseCard;
