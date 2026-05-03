@@ -5,7 +5,7 @@ import bannerImage from "@/assets/hero-banner.png";
 const Banner = () => {
   return (
     <div>
-      <section className="bg-[#050B2B] text-white overflow-hidden">
+      <section className=" text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
           {/* Left Side */}
           <div className="text-center lg:text-left">
@@ -45,9 +45,9 @@ const Banner = () => {
           </div>
 
           {/* Right Side */}
-          <div className="relative flex justify-center items-center w-full max-w-[550px] mx-auto mt-10 lg:mt-0">
+          <div className="relative flex justify-center items-center w-full max-w-137.5 mx-auto mt-10 lg:mt-0">
             {/* Glow */}
-            <div className="absolute w-[250px] sm:w-[320px] md:w-[400px] lg:w-[430px] h-[250px] sm:h-[320px] md:h-[400px] lg:h-[430px] bg-purple-700 rounded-full blur-3xl opacity-40"></div>
+            <div className="absolute w-62.5 sm:w-[320px] md:w-100 lg:w-107.5 h-62.5 sm:h-80 md:h-100 lg:h-107.5 bg-purple-700 rounded-full blur-3xl opacity-40"></div>
             {/* Photo */}
             <div className="relative z-10">
               <Image
@@ -55,7 +55,7 @@ const Banner = () => {
                 alt="Hero Banner"
                 width={500}
                 height={500}
-                className="w-[250px] sm:w-[320px] md:w-[420px] lg:w-[500px] h-auto object-contain"
+                className="w-62.5 sm:w-[320px] md:w-105 lg:w-125 h-auto object-contain"
                 priority
               />
             </div>

@@ -9,7 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="border-b px-2 bg-white">
+    <div className="border-b px-2 bg-[#050B2B]">
       <nav className="flex justify-between items-center py-3 max-w-7xl mx-auto w-full">
 
         {/* Logo */}
