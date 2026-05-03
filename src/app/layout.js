@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Navbar></Navbar>
-       <main> {children}</main>
+       <main className="max-7xl mx-auto"> {children}</main>
         </body>
     </html>
   );
