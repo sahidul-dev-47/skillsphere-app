@@ -42,7 +42,7 @@ const Navbar = () => {
               <Link href="/courses">Courses</Link>
             </li>
             <li className="hover:text-purple-500 transition-colors">
-              <Link href="/my-profile">My Profile</Link>
+              <Link href="/profile">My Profile</Link>
             </li>
           </ul>
         </div>
