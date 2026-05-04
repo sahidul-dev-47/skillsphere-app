@@ -10,7 +10,7 @@ const PopularCourseCard = ({ course , showBadge }) => {
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.5 }}
       // w-full max-w-[420px] card-ke mota korbe kintu responsive rakhbe
-      className="relative group w-full max-w-100 sm:max-w-125  bg-white border border-gray-100 rounded-[32px] p-6 shadow-sm hover:shadow-2xl transition-all duration-300"
+      className="relative group w-full  bg-white border border-gray-100 rounded-[32px] p-6 shadow-sm hover:shadow-2xl transition-all duration-300"
     >
       {showBadge &&(
          <div className="absolute top-5 right-5 z-10 bg-linear-to-r from-violet-600 to-indigo-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">
@@ -19,8 +19,8 @@ const PopularCourseCard = ({ course , showBadge }) => {
       )};
      
 
-      {/* Image height komano hoyeche height komanor jonno */}
-      <div className="relative h-50 w-full bg-gray-50 rounded-2xl overflow-hidden mb-4">
+      {/* image */}
+      <div className="relative h-48 w-full bg-gray-50 rounded-2xl overflow-hidden mb-4">
         <Image
           src={course.image}
           alt={course.title}

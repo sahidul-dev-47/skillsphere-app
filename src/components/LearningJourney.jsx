@@ -32,7 +32,7 @@ export default function LearningJourney() {
             Learning Process
           </p>
 
-          <h2 className="text-4xl md:text-5xl hover:bg-purple-500 font-bold">
+          <h2 className="text-4xl md:text-5xl  font-bold">
             Your Learning Journey 🚀
           </h2>
 
