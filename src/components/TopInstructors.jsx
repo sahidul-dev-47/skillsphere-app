@@ -68,7 +68,7 @@ export default function TopInstructors() {
               </div>
 
               {/* Button */}
-              <button className="btn btn-primary btn-sm mt-5">
+              <button className="border bg-black p-2 rounded-xl font-medium w-30 text-white mt-5 text-center hover:bg-gray-600">
                 View Profile
               </button>
 
