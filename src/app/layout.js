@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -28,7 +29,8 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-[#050B2B]">
           <Navbar />
-          <main className="max-w-7xl mx-auto">{children}</main>
+          <main className="max-w-7xl mx-auto">{children}
+          </main>
       </body>
     </html>
   );
