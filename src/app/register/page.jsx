@@ -33,7 +33,7 @@ const SignUpPage = () => {
     })
     console.log({data, error})
     if(!error) {
-        router.push('/')
+        router.push('/signin')
     }
   };
    const handleGoogleSignIn = async () => {
