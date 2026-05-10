@@ -1,6 +1,16 @@
 import Image from "next/image";
+import {auth} from "@/app/lib/auth"
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+
 
 const CourseDetailsPage = async ({ params }) => {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+  if(!session){
+    redirect('/signin')
+  }
   const { id } = await params;
   const res = await fetch("https://raw.githubusercontent.com/sahidul-dev-47/skillsphere-app/refs/heads/main/public/data.json");
   const courses = await res.json();

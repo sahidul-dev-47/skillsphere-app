@@ -130,7 +130,7 @@ const SignUpPage = () => {
           className={"w-full bg-black text-white"}
         >
           {" "}
-          <GrGoogle></GrGoogle> Sign In With Google
+          <GrGoogle></GrGoogle> Sign Up With Google
         </Button>
       </Card>
     </div>
