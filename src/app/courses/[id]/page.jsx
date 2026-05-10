@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 
 
 const CourseDetailsPage = async ({ params }) => {
-  const session = await auth.api.getSession({
+  const session = await auth.getSession({
     headers: await headers(),
   });
   if(!session){
