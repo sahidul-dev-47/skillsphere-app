@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { auth } from "@/app/lib/auth";
-import { headers } from "next/headers";
+
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
 
 const CourseDetailsPage = async ({ params }) => {
+  const headerList = await headers();
   const session = await auth.api.getSession({
-    headers: await headers(),
+    headers:{
+     headerList
+    }
   });
 
   if (!session) {
