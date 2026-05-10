@@ -41,6 +41,7 @@ const SignUpPage = () => {
   const handleGoogleSignIn = async () => {
     await authClient.signIn.social({
       provider: "google",
+      callbackURL: "/"
     });
   };
   return (

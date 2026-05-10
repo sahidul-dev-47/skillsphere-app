@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CourseDetailsPage = async ({ params }) => {
   const { id } = await params;
-  const res = await fetch("https://skillsphere-app.vercel.app/data.json");
+  const res = await fetch("https://raw.githubusercontent.com/sahidul-dev-47/skillsphere-app/refs/heads/main/public/data.json");
   const courses = await res.json();
 
   const course = courses.find((p) => p.id == id);

@@ -1,7 +1,8 @@
+export const dynamic = "force-dynamic";
 import AllCoursesClient from "@/components/AllCoursesClient";
 
 const AllCoursesPage = async () => {
-  const res = await fetch("https://skillsphere-app.vercel.app/data.json");
+  const res = await fetch("https://raw.githubusercontent.com/sahidul-dev-47/skillsphere-app/refs/heads/main/public/data.json");
   const courses = await res.json();
 
   return (
