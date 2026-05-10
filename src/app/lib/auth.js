@@ -7,6 +7,7 @@ const db = client.db("ProCoderBd");
 
 export const auth = betterAuth({
     database: mongodbAdapter(db , {client}),
+    baseURL: process.env.BETTER_AUTH_URL ,
      emailAndPassword: { 
     enabled: true, 
   }, 
