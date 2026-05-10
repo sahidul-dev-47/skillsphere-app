@@ -8,7 +8,7 @@ const CourseDetailsPage = async ({ params }) => {
   const headerList = await headers();
   const session = await auth.api.getSession({
     headers:{
-     headerList
+      headerList
     }
   });
 
