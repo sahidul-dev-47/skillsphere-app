@@ -21,10 +21,10 @@ Managing online learning often involves fragmented tools and slow user experienc
 | :--- | :--- |
 | **Frontend** | React.js, Next.js, Tailwind CSS, Framer Motion |
 | **Backend** | Node.js, Express.js |
-| **Database** | MongoDB, Mongoose |
+| **Database** | MongoDB |
 | **Authentication** | Better-Auth (JWT & OAuth) |
 | **Deployment** | Vercel |
-| **Tools** | Cloudinary (Media Storage), Git, GitHub |
+| **Tools** | Git, GitHub, Vercel |
 
 ---
 
