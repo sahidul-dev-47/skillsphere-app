@@ -37,9 +37,6 @@ Managing online learning often involves fragmented tools and slow user experienc
 
 ---
 
-## 📸 Screenshots
-![Home Page](./assets/readme/home.png)
-*Placeholder for Home Page View*
 
 
 
