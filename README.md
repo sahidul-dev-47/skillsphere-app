@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white" />
+
 </p>
 
 **[🌐 Live Site](https://skillsphere-app.vercel.app/)** · **[📦 Repository](https://github.com/sahidul-dev-47/skillsphere-app)**
@@ -73,7 +73,7 @@ Built for **independent learners, students, and educators** who need a platform 
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB |
 | **Authentication** | Better Auth (JWT & OAuth) |
-| **Media Storage** | Cloudinary |
+
 | **Deployment** | Vercel |
 
 <br/>
@@ -93,8 +93,7 @@ Create a `.env` file in the root directory:
 ```env
 NEXT_PUBLIC_API_URL=        # Your backend API endpoint
 MONGODB_URI=                 # Your MongoDB connection string
-BETTER_AUTH_SECRET=          # Your authentication secret key
-CLOUDINARY_URL=              # Your Cloudinary configuration
+BETTER_AUTH_SECRET=          # Your authentication secret key          
 ```
 
 Run the development server:
